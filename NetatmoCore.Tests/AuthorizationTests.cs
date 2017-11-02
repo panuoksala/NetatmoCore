@@ -14,13 +14,14 @@ namespace NetatmoCore.Tests
             var clientSecret = "";
             var username = "";
             var password = "";
+            var device_id = "";
 
             var auth = new NetatmoAuth();
             var token = auth.Login(clientId, clientSecret, username, password, new[] { NetatmoAuth.READ_STATION});
 
             var netatmo = new NetAtmoClient(token.access_token);
             
-            var result = netatmo.Getthermostatsdata("CloudAtmo").Result;
+            var result = netatmo.Getthermostatsdata(device_id).Result;
         }
     }
 }
