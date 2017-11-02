@@ -4,7 +4,10 @@
 .NET Core class library which helps interaction with Netatmo products.
 
 See https://dev.netatmo.com/resources/technical/reference for complete Netatmo reference. 
-* All of methods are not implemented yet, but feel free to contribute more methods into SDK *
+**All of methods are not implemented yet, but feel free to contribute more methods into SDK**
+
+Data classes are created from Swagger documentation which is found here
+https://cbornet.github.io/netatmo-swagger-decl/#
 
 Basic station data reading is simply done by calling few methods:
 
